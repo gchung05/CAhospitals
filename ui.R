@@ -9,7 +9,7 @@ library(leaflet)
 shinyUI(fluidPage(theme = "bootstrap.css",
   
   # Application Title
-  titlePanel(h1("Best & Worst Hospitals Near You")),
+  titlePanel(h1("Best & Worst California Hospitals for Major Surgery")),
   
   # Search Bar
   fluidRow(
@@ -36,7 +36,7 @@ shinyUI(fluidPage(theme = "bootstrap.css",
              "The ", strong("top"), " score is 95.",
              "The ", strong("lowest"), " scores can even be negative!"),
            h2("What do the Circle Sizes Mean?"),
-           p("The bigger the circle, the more procedures done at that 
+           p("The bigger the circle, the more surgeries done at that 
              hospital."),
            h2("About the Scores"),
            p("Scores are based on 2011-2013 risk-adjusted mortality rates for 
@@ -60,7 +60,8 @@ shinyUI(fluidPage(theme = "bootstrap.css",
              tags$li("PCI"),
              tags$li("Pneumonia")),
            h3("Credits and Attribution"),
-           span("Data Provided by ", a("CHHS", href="https://chhs.data.ca.gov")),
+           span("Data Provided by ", a("California Health & Human Services", 
+                                       href="https://chhs.data.ca.gov")),
            br(),
            span("Analysis and Application Developed by ", 
                 a("Gary Chung", href="http://gary-chung.com")),
