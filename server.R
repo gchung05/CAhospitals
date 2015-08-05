@@ -23,6 +23,7 @@ shinyServer(function(input, output, session) {
   })
   
   output$CAmap <- renderLeaflet({
+    load(file="Data/aSet.Rdata")
     currLoc <- geocode(values$where)
     # Set the red-green color palette
     pal <- colorNumeric(palette = c("#FF0000", "#00FF00"), 
