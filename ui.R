@@ -22,7 +22,7 @@ shinyUI(fluidPage(theme = "bootstrap.css",
            )),
   
   # The Map
-  leafletOutput("CAmap", height=700),
+  leafletOutput("CAmap", height=600),
   
   # References
   fluidRow(
